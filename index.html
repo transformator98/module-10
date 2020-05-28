@@ -2,15 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
-    <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml" />
-    <title>Mobule-10</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Mobule-10</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="site-navigation">
+        <a href="#" class="link site-navigation__logo">MoGo</a>
+        <ul class="list site-navigation__list">
+          <li class="site-navigation__item">
+            <a href="#" class="link site-navigation__link">About</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="link site-navigation__link">Service</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="link site-navigation__link">Work</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="link site-navigation__link">blog</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="link site-navigation__link">contact</a>
+          </li>
 
+        </ul>
+        <ul class="list control">
+          <li class="control__item">
+            <a href="#" class="link control__link ">
+              <svg class="control__svg">
+                <use href="./images/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="link link control__link ">
+              <svg class="control__svg">
+                <use href="./images/sprite.svg#icon-glass"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="banner">
+        <h2 class="title">
+          Creative Template <span class="title-br">Welcome to MoGo</span>
+        </h2>
+        <button class="baner-btn">learn more</button>
+      </section>
+    </div>
+  </header>
 </body>
 
 </html>

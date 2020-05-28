@@ -1,0 +1,255 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaushan Script"), local("KaushanScript-Regular"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+    url("../fonts/roboto-v20-latin-300italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-fonts: "Montserrat";
+  --two-fonts: "Roboto";
+  --three-fonts: "Kaushan Script";
+  --header-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: var(--main-fonts);
+}
+
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  background-image: linear-gradient(
+      90deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../images/eagle.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 24px;
+  padding-bottom: 228px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SITE NAVIGATION */
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 163px;
+}
+
+.site-navigation__logo {
+  font-size: 30px;
+  color: var(--header-color);
+  font-weight: bold;
+}
+.site-navigation__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-navigation__item:after {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  content: "";
+  background-color: #fce38a;
+  width: 0;
+  height: 3px;
+  margin-top: 10px;
+  transition: all 0.3s linear;
+}
+
+.site-navigation__item:hover:after,
+.site-navigation__item:focus:after {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+}
+.site-navigation__item:hover .site-navigation__link,
+.site-navigation__item:focus .site-navigation__link {
+  color: #fce38a;
+}
+.site-navigation__item:not(:last-child) {
+  margin-right: 58px;
+}
+
+.site-navigation__link {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--main-fonts);
+  color: var(--header-color);
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+/* Control */
+.control {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 52px;
+  align-items: baseline;
+}
+.control__item {
+  transition: all 0.5s linear;
+}
+.control__item:not(:last-child) {
+  margin-right: 42px;
+}
+.control__item:hover .control__svg,
+.control__item:focus .control__svg {
+  fill: #fce38a;
+  transform: scale(1.2);
+}
+
+.control__link {
+  width: 18px;
+  height: 18px;
+}
+.control__svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--header-color);
+  transition: all 0.2s linear;
+}
+
+/* BANNER */
+.banner {
+  text-align: center;
+}
+
+.title {
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+  font-size: 72px;
+  font-family: var(--three-fonts);
+  color: var(--header-color);
+  margin-bottom: 80px;
+}
+.title-br {
+  font-family: var(--main-fonts);
+  font-size: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.baner-btn {
+  font-size: 14px;
+  color: var(--header-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid var(--header-color);
+  background-color: rgba(0, 0, 0, 0);
+  width: 164px;
+  height: 44px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.baner-btn:hover {
+  transform: scale(1.1);
+}
