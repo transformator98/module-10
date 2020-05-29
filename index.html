@@ -1,64 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Mobule-10</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./logo.svg" type="image/svg+xml" />
-  <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Mobule-10</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="site-navigation">
+          <a href="#" class="link site-navigation__logo">MoGo</a>
+          <ul class="list site-navigation__list">
+            <li class="site-navigation__item">
+              <a href="#" class="link site-navigation__link">About</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="link site-navigation__link">Service</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="link site-navigation__link">Work</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="link site-navigation__link">blog</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="link site-navigation__link">contact</a>
+            </li>
+          </ul>
+          <ul class="list control">
+            <li class="control__item">
+              <a href="#" class="link control__link">
+                <svg class="control__svg">
+                  <use href="./images/sprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="control__item">
+              <a href="#" class="link link control__link">
+                <svg class="control__svg">
+                  <use href="./images/sprite.svg#icon-glass"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="banner">
+          <h2 class="title banner__title">
+            Creative Template
+            <span class="title__span banner__title--br">Welcome to MoGo</span>
+          </h2>
+          <button class="baner__btn">learn more</button>
+        </section>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="site-navigation">
-        <a href="#" class="link site-navigation__logo">MoGo</a>
-        <ul class="list site-navigation__list">
-          <li class="site-navigation__item">
-            <a href="#" class="link site-navigation__link">About</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#" class="link site-navigation__link">Service</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#" class="link site-navigation__link">Work</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#" class="link site-navigation__link">blog</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#" class="link site-navigation__link">contact</a>
-          </li>
-
-        </ul>
-        <ul class="list control">
-          <li class="control__item">
-            <a href="#" class="link control__link ">
-              <svg class="control__svg">
-                <use href="./images/sprite.svg#icon-cart"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="control__item">
-            <a href="#" class="link link control__link ">
-              <svg class="control__svg">
-                <use href="./images/sprite.svg#icon-glass"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <section class="banner">
-        <h2 class="title">
-          Creative Template <span class="title-br">Welcome to MoGo</span>
+    <main class="main container">
+      <section class="services">
+        <h2 class="title title__section title__services">
+          We work with
+          <span class="title__span title__section--br">Amazing Services</span>
         </h2>
-        <button class="baner-btn">learn more</button>
-      </section>
-    </div>
-  </header>
-</body>
 
+        <ul class="list services__list">
+          <li class="services__item">
+            <svg class="services__svg">
+              <use href="./images/sprite.svg#icon-alarm"></use>
+            </svg>
+            <h3 class="servises__name">Photography</h3>
+            <p class="descriprion servises__descriprion">
+              Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__svg">
+              <use href="./images/sprite.svg#icon-graph"></use>
+            </svg>
+            <h3 class="servises__name">web design</h3>
+            <p class="descriprion servises__descriprion">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__svg">
+              <use href="./images/sprite.svg#icon-computer"></use>
+            </svg>
+            <h3 class="servises__name">creativity</h3>
+            <p class="descriprion servises__descriprion">
+              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__svg">
+              <use href="./images/sprite.svg#icon-book"></use>
+            </svg>
+            <h3 class="servises__name">seo</h3>
+            <p class="descriprion servises__descriprion">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__svg">
+              <use href="./images/sprite.svg#icon-home"></use>
+            </svg>
+            <h3 class="servises__name">css/html</h3>
+            <p class="descriprion servises__descriprion">
+              Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+            </p>
+          </li>
+          <li class="services__item">
+            <svg class="services__svg">
+              <use href="./images/sprite.svg#icon-digital"></use>
+            </svg>
+            <h3 class="servises__name">digital</h3>
+            <p class="descriprion servises__descriprion">
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="team">
+        <h2 class="title title__section title__team">
+          Who we are
+          <span class="title__span title__section--br">Meet our team</span>
+        </h2>
+        <p class="descriprion team__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <ul class="list team__list">
+          <li class="team__item">
+            <div class="wrapper">
+              <img
+                srcset="./images/team-1.jpg 380w, ./images/team-1@2x.jpg 760w"
+                alt="team-1"
+                sizes="380px"
+                height="470"
+                class="team__img"
+              />
+            </div>
+
+            <h3 class="team__name">Matthew Dix</h3>
+            <p class="team_description descriprion">Graphic Design</p>
+          </li>
+
+          <li class="team__item">
+            <div class="wrapper">
+              <img
+                srcset="./images/team-2.jpg 380w, ./images/team-2@2x.jpg 760w"
+                alt="team-1"
+                sizes="380px"
+                height="470"
+                class="team__img"
+              />
+            </div>
+            <h3 class="team__name">Christopher Campbell</h3>
+            <p class="team_description descriprion">Branding/UX design</p>
+          </li>
+
+          <li class="team__item">
+            <div class="wrapper">
+              <img
+                srcset="./images/team-3.jpg 380w, ./images/team-3@2x.jpg 760w"
+                alt="team-1"
+                sizes="380px"
+                height="470"
+                class="team__img"
+              />
+            </div>
+            <h3 class="team__name">Michael Fertig</h3>
+            <p class="team__desc descriprion">Developer</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__wrapper">
+        <p class="footer__title">
+          © 2016 MoGo free PSD template by
+          <a href="#" class="link footer__link">Laaqiq</a>
+        </p>
+        <form class="contact-form" action="#">
+          <input
+            type="email"
+            class="contact-form__input"
+            placeholder="Your Email..."
+          />
+          <button type="submit" class="contact-form__btn">subscribe</button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
