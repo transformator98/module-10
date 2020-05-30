@@ -14,34 +14,34 @@
     <header class="header">
       <div class="container">
         <nav class="site-navigation">
-          <a href="#" class="link site-navigation__logo">MoGo</a>
-          <ul class="list site-navigation__list">
-            <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__link">About</a>
+          <a href="#" class="link logo">MoGo</a>
+          <ul class="list navigation-list">
+            <li class="navigation-list__item">
+              <a href="#" class="link navigation-list__item-link">About</a>
             </li>
-            <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__link">Service</a>
+            <li class="navigation-list__item">
+              <a href="#" class="link navigation-list__item-link">Service</a>
             </li>
-            <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__link">Work</a>
+            <li class="navigation-list__item">
+              <a href="#" class="link navigation-list__item-link">Work</a>
             </li>
-            <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__link">blog</a>
+            <li class="navigation-list__item">
+              <a href="#" class="link navigation-list__item-link">blog</a>
             </li>
-            <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__link">contact</a>
+            <li class="navigation-list__item">
+              <a href="#" class="link navigation-list__item-link">contact</a>
             </li>
           </ul>
           <ul class="list control">
             <li class="control__item">
-              <a href="#" class="link control__link">
+              <a href="#" class="link control__item-link">
                 <svg class="control__svg">
                   <use href="./images/sprite.svg#icon-cart"></use>
                 </svg>
               </a>
             </li>
             <li class="control__item">
-              <a href="#" class="link link control__link">
+              <a href="#" class="link control__item-link">
                 <svg class="control__svg">
                   <use href="./images/sprite.svg#icon-glass"></use>
                 </svg>
@@ -52,138 +52,144 @@
         <section class="banner">
           <h2 class="title banner__title">
             Creative Template
-            <span class="title__span banner__title--br">Welcome to MoGo</span>
+            <span class="title__span banner__title_span">Welcome to MoGo</span>
           </h2>
-          <button class="baner__btn">learn more</button>
+          <button class="btn">learn more</button>
         </section>
       </div>
     </header>
 
-    <main class="main container">
-      <section class="services">
-        <h2 class="title title__section title__services">
-          We work with
-          <span class="title__span title__section--br">Amazing Services</span>
-        </h2>
+    <main class="main">
+      <div class="container">
+        <section class="services">
+          <h2 class="title section__title services__title">
+            We work with
+            <span class="title__span section__title_br">Amazing Services</span>
+          </h2>
 
-        <ul class="list services__list">
-          <li class="services__item">
-            <svg class="services__svg">
-              <use href="./images/sprite.svg#icon-alarm"></use>
-            </svg>
-            <h3 class="servises__name">Photography</h3>
-            <p class="descriprion servises__descriprion">
-              Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </li>
-          <li class="services__item">
-            <svg class="services__svg">
-              <use href="./images/sprite.svg#icon-graph"></use>
-            </svg>
-            <h3 class="servises__name">web design</h3>
-            <p class="descriprion servises__descriprion">
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor.
-            </p>
-          </li>
-          <li class="services__item">
-            <svg class="services__svg">
-              <use href="./images/sprite.svg#icon-computer"></use>
-            </svg>
-            <h3 class="servises__name">creativity</h3>
-            <p class="descriprion servises__descriprion">
-              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor.
-            </p>
-          </li>
-          <li class="services__item">
-            <svg class="services__svg">
-              <use href="./images/sprite.svg#icon-book"></use>
-            </svg>
-            <h3 class="servises__name">seo</h3>
-            <p class="descriprion servises__descriprion">
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-            </p>
-          </li>
-          <li class="services__item">
-            <svg class="services__svg">
-              <use href="./images/sprite.svg#icon-home"></use>
-            </svg>
-            <h3 class="servises__name">css/html</h3>
-            <p class="descriprion servises__descriprion">
-              Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
-            </p>
-          </li>
-          <li class="services__item">
-            <svg class="services__svg">
-              <use href="./images/sprite.svg#icon-digital"></use>
-            </svg>
-            <h3 class="servises__name">digital</h3>
-            <p class="descriprion servises__descriprion">
-              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-            </p>
-          </li>
-        </ul>
-      </section>
+          <ul class="list services-list">
+            <li class="services-list__item">
+              <svg class="services-list__svg">
+                <use href="./images/sprite.svg#icon-alarm"></use>
+              </svg>
+              <h3 class="servises__name">Photography</h3>
+              <p class="description servises__description">
+                Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </li>
+            <li class="services-list__item">
+              <svg class="services-list__svg">
+                <use href="./images/sprite.svg#icon-graph"></use>
+              </svg>
+              <h3 class="servises__name">web design</h3>
+              <p class="description servises__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </li>
+            <li class="services-list__item">
+              <svg class="services-list__svg">
+                <use href="./images/sprite.svg#icon-computer"></use>
+              </svg>
+              <h3 class="servises__name">creativity</h3>
+              <p class="description servises__description">
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor.
+              </p>
+            </li>
+            <li class="services-list__item">
+              <svg class="services-list__svg">
+                <use href="./images/sprite.svg#icon-book"></use>
+              </svg>
+              <h3 class="servises__name">seo</h3>
+              <p class="description servises__description">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+            </li>
+            <li class="services-list__item">
+              <svg class="services-list__svg">
+                <use href="./images/sprite.svg#icon-home"></use>
+              </svg>
+              <h3 class="servises__name">css/html</h3>
+              <p class="description servises__description">
+                Lorem dolor sit amet, consectetur adipiscing elit, sed do
+                tempor.
+              </p>
+            </li>
+            <li class="services-list__item">
+              <svg class="services-list__svg">
+                <use href="./images/sprite.svg#icon-digital"></use>
+              </svg>
+              <h3 class="servises__name">digital</h3>
+              <p class="description servises__description">
+                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+            </li>
+          </ul>
+        </section>
 
-      <section class="team">
-        <h2 class="title title__section title__team">
-          Who we are
-          <span class="title__span title__section--br">Meet our team</span>
-        </h2>
-        <p class="descriprion team__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <section class="team">
+          <h2 class="title section__title team__title">
+            Who we are
+            <span class="title__span section__title_br">Meet our team</span>
+          </h2>
+          <p class="description team__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
 
-        <ul class="list team__list">
-          <li class="team__item">
-            <div class="wrapper">
-              <img
-                srcset="./images/team-1.jpg 380w, ./images/team-1@2x.jpg 760w"
-                alt="team-1"
-                sizes="380px"
-                height="470"
-                class="team__img"
-              />
-            </div>
+          <ul class="list team-list">
+            <li class="team-list__item">
+              <div class="team-list__wrapper">
+                <img
+                  srcset="./images/team-1.jpg 380w, ./images/team-1@2x.jpg 760w"
+                  alt="team-1"
+                  sizes="380px"
+                  height="470"
+                  class="team__img"
+                />
+              </div>
 
-            <h3 class="team__name">Matthew Dix</h3>
-            <p class="team_description descriprion">Graphic Design</p>
-          </li>
+              <h3 class="team__name">Matthew Dix</h3>
+              <p class="team__name-description descriprion">Graphic Design</p>
+            </li>
 
-          <li class="team__item">
-            <div class="wrapper">
-              <img
-                srcset="./images/team-2.jpg 380w, ./images/team-2@2x.jpg 760w"
-                alt="team-1"
-                sizes="380px"
-                height="470"
-                class="team__img"
-              />
-            </div>
-            <h3 class="team__name">Christopher Campbell</h3>
-            <p class="team_description descriprion">Branding/UX design</p>
-          </li>
+            <li class="team-list__item">
+              <div class="team-list__wrapper">
+                <img
+                  srcset="./images/team-2.jpg 380w, ./images/team-2@2x.jpg 760w"
+                  alt="team-2"
+                  sizes="380px"
+                  height="470"
+                  class="team__img"
+                />
+              </div>
+              <h3 class="team__name">Christopher Campbell</h3>
+              <p class="team__name-description descriprion">
+                Branding/UX design
+              </p>
+            </li>
 
-          <li class="team__item">
-            <div class="wrapper">
-              <img
-                srcset="./images/team-3.jpg 380w, ./images/team-3@2x.jpg 760w"
-                alt="team-1"
-                sizes="380px"
-                height="470"
-                class="team__img"
-              />
-            </div>
-            <h3 class="team__name">Michael Fertig</h3>
-            <p class="team__desc descriprion">Developer</p>
-          </li>
-        </ul>
-      </section>
+            <li class="team-list__item">
+              <div class="team-list__wrapper">
+                <img
+                  srcset="./images/team-3.jpg 380w, ./images/team-3@2x.jpg 760w"
+                  alt="team-3"
+                  sizes="380px"
+                  height="470"
+                  class="team__img"
+                />
+              </div>
+              <h3 class="team__name">Michael Fertig</h3>
+              <p class="team__name-description descriprion">Developer</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="footer container">
@@ -198,7 +204,7 @@
             class="contact-form__input"
             placeholder="Your Email..."
           />
-          <button type="submit" class="contact-form__btn">subscribe</button>
+          <button type="submit" class="form-btn">subscribe</button>
         </form>
       </div>
     </footer>
