@@ -218,8 +218,8 @@ body {
   width: 100%;
 }
 
-.navigation-list__item:hover .site-navigation__link,
-.navigation-list__item:focus .site-navigation__link {
+.navigation-list__item:hover .navigation-list__item-link,
+.navigation-list__item:focus .navigation-list__item-link {
   color: #fce38a;
 }
 
