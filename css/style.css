@@ -540,7 +540,7 @@ body {
   transition: all 0.2s linear;
 }
 
-.overlay-list {
+.list-social-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,7 +552,7 @@ body {
   justify-content: space-between;
 }
 
-.overlay-list__item {
+.list-social-icon__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,14 +567,14 @@ body {
   justify-content: center;
 }
 
-.overlay-list__item:hover,
-.overlay-list__item:focus {
+.list-social-icon__item:hover,
+.list-social-icon__item:focus {
   width: 56px;
   background-color: #f38181;
 }
 
-.overlay-list__item:hover .overlay-svg,
-.overlay-list__item:focus .overlay-svg {
+.list-social-icon__item:hover .overlay-svg,
+.list-social-icon__item:focus .overlay-svg {
   fill: #fff;
 }
 
